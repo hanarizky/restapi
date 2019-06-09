@@ -5,7 +5,7 @@ The REST API is a communication between client and server to manage data using t
 
 ## Get Started 
 
-### This application is built using SpringBoot. Tools that must be prepared before build the application:
+### This project is built using SpringBoot. Tools that must be prepared before build the application:
 ```
 1. Java 1.8
 2. Maven
@@ -13,7 +13,7 @@ The REST API is a communication between client and server to manage data using t
 4. Lombok plugin
 ```
 
-### This app is consist of:
+### This project is consist of:
 - a simple endpoints
 - a unit testing
 - actuator to see the information about the app, the environment where the app running, and healthcheck
