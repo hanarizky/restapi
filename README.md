@@ -29,19 +29,3 @@ The REST API is a communication between client and server to manage data using t
 - Swagger UI  : The Swagger UI
 ```
 The dependence will be added to a file called **pom.xml**
-
-### The file Structure
-```
-demo.restapi
- ├──config                          
- │   └──SwaggerConfig              
- ├──controller                     
- │   ├──UserController             
- ├──model                          
- │   └──UserRest                   
- │   └──UserDetailsRequest           
- ├──service                        
- │   └──UserService                 
- │   └──impl 
-         └──UserServiceImpl        
-```
