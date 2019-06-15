@@ -16,6 +16,7 @@ The REST API is a communication between client and server to manage data using t
 ### This project is consist of:
 - a simple endpoints
 - a simple unit testing
+- exception handler
 - actuator to see the information about the app, the environment where the app running, and healthcheck
 - API Swagger for documentation
 - the application.properties to change the environment configuration
