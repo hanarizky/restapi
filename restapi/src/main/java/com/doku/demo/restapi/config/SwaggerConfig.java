@@ -18,9 +18,9 @@ public class SwaggerConfig {
     @Bean
     public Docket api() {
         return new Docket(DocumentationType.SPRING_WEB.SWAGGER_2)
-                .select()
-                .apis(RequestHandlerSelectors.any())
-                .paths(Predicates.not(PathSelectors.regex("/error.*")))     //To remove basic-error-controller on Swagger UI
+                .select()       // give control over endpoints to exposed via swagger
+                .apis(RequestHandlerSelectors.any())        // it will make documentation for entire API that available
+                .paths(Predicates.not(PathSelectors.regex("/error.*")))     // to shows it at UI and to remove basic-error-controller on Swagger UI
                 .build()
                 .apiInfo(apiInfo());
     }

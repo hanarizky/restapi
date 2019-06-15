@@ -1,11 +1,12 @@
 package com.doku.demo.restapi.service.impl;
 
 import com.doku.demo.restapi.model.UserDetailsRequest;
-import com.doku.demo.restapi.model.UserRest;
+import com.doku.demo.restapi.dto.UserRest;
 import com.doku.demo.restapi.service.UserService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.util.Collection;
 import java.util.HashMap;
 
 
@@ -41,7 +42,20 @@ public class UserServiceImpl implements UserService {
         return returnValue;
     }
 
-    public UserRest getUser (String userId) {
-            return users.get(userId);
+    public UserRest getUser(String userId) {
+
+        return users.get(userId);
+    }
+
+
+    public Collection<UserRest> getUserAll() {
+
+        return users.values();
+    }
+
+    public UserRest deleteUser(String userId) {
+
+        return users.remove(userId);
+
     }
 }

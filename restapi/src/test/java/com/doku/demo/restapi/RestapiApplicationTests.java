@@ -1,7 +1,7 @@
 package com.doku.demo.restapi;
 
 import com.doku.demo.restapi.model.UserDetailsRequest;
-import com.doku.demo.restapi.model.UserRest;
+import com.doku.demo.restapi.dto.UserRest;
 import com.doku.demo.restapi.service.UserService;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
