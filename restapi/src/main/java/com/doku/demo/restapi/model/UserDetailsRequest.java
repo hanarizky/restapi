@@ -1,6 +1,5 @@
 package com.doku.demo.restapi.model;
 
-
 import lombok.Getter;
 import lombok.Setter;
 

@@ -6,7 +6,6 @@ import com.doku.demo.restapi.service.UserService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import java.util.Collection;
 import java.util.HashMap;
 
 
@@ -34,7 +33,7 @@ public class UserServiceImpl implements UserService {
         returnValue.setUserName(userDetails.getUserName());
         returnValue.setEmail(userDetails.getEmail());
 
-        if (users == null) {
+        if (users == null ) {
             users = new HashMap<>();
             users.put(userId, returnValue);
         }
@@ -42,20 +41,7 @@ public class UserServiceImpl implements UserService {
         return returnValue;
     }
 
-    public UserRest getUser(String userId) {
-
-        return users.get(userId);
-    }
-
-
-    public Collection<UserRest> getUserAll() {
-
-        return users.values();
-    }
-
-    public UserRest deleteUser(String userId) {
-
-        return users.remove(userId);
-
+    public UserRest getUser (String userId) {
+            return users.get(userId);
     }
 }
